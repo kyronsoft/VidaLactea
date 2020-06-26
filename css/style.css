@@ -7411,6 +7411,7 @@ h1, h2, h3, h4, h5,
     left: 0;
     top: 0;
     margin-top: -130px;
+    opacity: 0.4;
     background: #fff !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.1); }
@@ -8913,7 +8914,7 @@ ul.timeline-us:before {
     left: 29px;
     width: 2px;
     height: 100%;
-    z-index: 400;
+   
 }
 ul.timeline-us > li {
     margin: 20px 0;
@@ -8929,7 +8930,6 @@ ul.timeline-us > li:before {
     left: 20px;
     width: 20px;
     height: 20px;
-    z-index: 400;
 }
 
 /* End Timeline Style */
