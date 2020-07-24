@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    background: #121618;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: gray;
+    background: url(../img/bg_4.jpg) no-repeat fixed;
+    background-size: cover;    
+}
+
+#location {
+    position: relative;
+    min-height: 200px;
+    background: url('../img/bg_4.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#beneficios {
+    color: #5c3d03;
+}
+
+#beneficios .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: #ea7f2c;
+    opacity: 0;
+}
+
+#beneficios .icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+
+#beneficios .icon:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    bordeR: 1px solid #bf7e06;
+    z-index: -1;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#beneficios .icon span {
+    font-size: 60px;
+    color: #5c3d03;
+    z-index: 1;
+}
+
+#beneficios:hover .icon {
+    color: #fff;
+}
+
+#beneficios:hover .icon:after {
+    border: none;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    background: #f8b500;
+}
+
+.quesos,
+.crema {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.quesos:hover .overlay,
+.crema:hover .overlay {
+    opacity: 1;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 100px;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f8b500;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#beneficios,
+#contact,
+#footer {
+    background-image: url("/img/food.png");
+}
+
+.img-mejor {
+    width: 55%;
+    height: auto;
+}
+
+.carousel-item {
+    height: 450px;
+}
+
+.carousel-image-1 {
+    background: url('../img/carousel-3.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.carousel-image-2 {
+    background: url('../img/carousel-2.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.carousel-image-3 {
+    background: url('../img/carousel-1.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.objetivos li {
+    text-align: left;
+}
+
+#procesos p {
+    text-align: justify;
+}
+
+#procesos img {
+    align-content: center;
+}
+
+#procesos h5 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card {    
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .navbar { margin-top: 18px; }
+
+.sticky .navbar li a:link,
+.sticky .navbar li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.navbar {
+    opacity: 0.6;
+}
